@@ -106,6 +106,7 @@ const plp_fft_instance_f32 plp_rfft_sR_f32_len2048 = { 2048, 0, (float32_t *)twi
 
 const plp_dwt_wavelet_f32 PLP_DWT_HAAR_f32 = {
    .length = 2,
+   .type = PLP_DWT_WAVELET_HAAR,
    .dec_lo = (float32_t []){  0.7071067811865476f, 0.7071067811865476f },
    .dec_hi = (float32_t []){ -0.7071067811865476f, 0.7071067811865476f }
 };
@@ -113,6 +114,7 @@ const plp_dwt_wavelet_f32 PLP_DWT_HAAR_f32 = {
 
 const plp_dwt_wavelet_f32 PLP_DWT_DB1_f32 = {
    .length = 2,
+   .type = PLP_DWT_WAVELET_DB1,
    .dec_lo = (float32_t []){  0.7071067811865476f, 0.7071067811865476f },
    .dec_hi = (float32_t []){ -0.7071067811865476f, 0.7071067811865476f }
 };
@@ -120,6 +122,7 @@ const plp_dwt_wavelet_f32 PLP_DWT_DB1_f32 = {
 
 const plp_dwt_wavelet_f32 PLP_DWT_DB2_f32 = {
    .length = 4,
+   .type = PLP_DWT_WAVELET_DB2,
    .dec_lo = (float32_t []){  
        -0.12940952255092145f,
         0.22414386804185735f,
@@ -137,6 +140,7 @@ const plp_dwt_wavelet_f32 PLP_DWT_DB2_f32 = {
 
 const plp_dwt_wavelet_f32 PLP_DWT_DB3_f32 = {
    .length = 6,
+   .type = PLP_DWT_WAVELET_DB3,
    .dec_lo = (float32_t []){
         0.035226291882100656f,
         -0.08544127388224149f,
@@ -157,6 +161,7 @@ const plp_dwt_wavelet_f32 PLP_DWT_DB3_f32 = {
 
 const plp_dwt_wavelet_f32 PLP_DWT_DB4_f32 = {
    .length = 8,
+   .type = PLP_DWT_WAVELET_DB4,
    .dec_lo = (float32_t []){  
         -0.010597401784997278f,
         0.032883011666982945f,
