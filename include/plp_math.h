@@ -8567,7 +8567,7 @@ void plp_dwt_q8(const int8_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_f32_xpulpv2(const float32_t *__restrict__ pSrc,
+void plp_dwt_f32s_xpulpv2(const float32_t *__restrict__ pSrc,
                   uint32_t length,
                   const plp_dwt_wavelet_f32 wavelet,
                   plp_dwt_extension_mode mode,
@@ -8584,7 +8584,7 @@ void plp_dwt_f32_xpulpv2(const float32_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_haar_f32_xpulpv2(const float32_t *__restrict__ pSrc,
+void plp_dwt_haar_f32s_xpulpv2(const float32_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
                          float32_t *__restrict__ pDstA,
@@ -8604,7 +8604,7 @@ void plp_dwt_haar_f32_xpulpv2(const float32_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_q32_xpulpv2(const int32_t *__restrict__ pSrc,
+void plp_dwt_q32s_xpulpv2(const int32_t *__restrict__ pSrc,
                   uint32_t length,
                   const plp_dwt_wavelet_q32 wavelet,
                   plp_dwt_extension_mode mode,
@@ -8621,7 +8621,7 @@ void plp_dwt_q32_xpulpv2(const int32_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_haar_q32_xpulpv2(const int32_t *__restrict__ pSrc,
+void plp_dwt_haar_q32s_xpulpv2(const int32_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
                          int32_t *__restrict__ pDstA,
@@ -8640,7 +8640,7 @@ void plp_dwt_haar_q32_xpulpv2(const int32_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_q16_xpulpv2(const int16_t *__restrict__ pSrc,
+void plp_dwt_q16s_xpulpv2(const int16_t *__restrict__ pSrc,
                   uint32_t length,
                   const plp_dwt_wavelet_q16 wavelet,
                   plp_dwt_extension_mode mode,
@@ -8657,7 +8657,7 @@ void plp_dwt_q16_xpulpv2(const int16_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_haar_q16_xpulpv2(const int16_t *__restrict__ pSrc,
+void plp_dwt_haar_q16s_xpulpv2(const int16_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
                          int16_t *__restrict__ pDstA,
@@ -8675,7 +8675,7 @@ void plp_dwt_haar_q16_xpulpv2(const int16_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_q8_xpulpv2(const int8_t *__restrict__ pSrc,
+void plp_dwt_q8s_xpulpv2(const int8_t *__restrict__ pSrc,
                   uint32_t length,
                   const plp_dwt_wavelet_q8 wavelet,
                   plp_dwt_extension_mode mode,
@@ -8692,7 +8692,7 @@ void plp_dwt_q8_xpulpv2(const int8_t *__restrict__ pSrc,
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
 */
-void plp_dwt_haar_q8_xpulpv2(const int8_t *__restrict__ pSrc,
+void plp_dwt_haar_q8s_xpulpv2(const int8_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
                          int8_t *__restrict__ pDstA,
