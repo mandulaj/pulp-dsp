@@ -8769,7 +8769,6 @@ void plp_dwt_q16_parallel(const int16_t *__restrict__ pSrc,
    @param[in]   mode     boundary extension mode
    @param[in]   nPE      Number of cores to use
 
-
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
@@ -8789,6 +8788,7 @@ void plp_dwt_q32_parallel(const int32_t *__restrict__ pSrc,
    @param[in]   length   length of input buffer
    @param[in]   wavelet  wavelet structure for calculating DWT
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8798,6 +8798,7 @@ void plp_dwt_f32p_xpulpv2(const float32_t *__restrict__ pSrc,
                          uint32_t length,
                          const plp_dwt_wavelet_f32 wavelet,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          float32_t *__restrict__ pDstA,
                          float32_t *__restrict__ pDstD);
 
@@ -8807,6 +8808,7 @@ void plp_dwt_f32p_xpulpv2(const float32_t *__restrict__ pSrc,
    @param[in]   pSrc     points to the input buffer (real data)
    @param[in]   length   length of input buffer
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8815,6 +8817,7 @@ void plp_dwt_f32p_xpulpv2(const float32_t *__restrict__ pSrc,
 void plp_dwt_haar_f32p_xpulpv2(const float32_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          float32_t *__restrict__ pDstA,
                          float32_t *__restrict__ pDstD);
 
@@ -8825,6 +8828,7 @@ void plp_dwt_haar_f32p_xpulpv2(const float32_t *__restrict__ pSrc,
    @param[in]   length   length of input buffer
    @param[in]   wavelet  wavelet structure for calculating DWT
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8834,6 +8838,7 @@ void plp_dwt_q8p_xpulpv2(const int8_t *__restrict__ pSrc,
                          uint32_t length,
                          const plp_dwt_wavelet_q8 wavelet,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          int8_t *__restrict__ pDstA,
                          int8_t *__restrict__ pDstD);
 
@@ -8844,6 +8849,7 @@ void plp_dwt_q8p_xpulpv2(const int8_t *__restrict__ pSrc,
    @param[in]   pSrc     points to the input buffer (q7)
    @param[in]   length   length of input buffer
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8852,6 +8858,7 @@ void plp_dwt_q8p_xpulpv2(const int8_t *__restrict__ pSrc,
 void plp_dwt_haar_q8p_xpulpv2(const int8_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          int8_t *__restrict__ pDstA,
                          int8_t *__restrict__ pDstD);
 
@@ -8863,6 +8870,7 @@ void plp_dwt_haar_q8p_xpulpv2(const int8_t *__restrict__ pSrc,
    @param[in]   length   length of input buffer
    @param[in]   wavelet  wavelet structure for calculating DWT
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8872,6 +8880,7 @@ void plp_dwt_q16p_xpulpv2(const int16_t *__restrict__ pSrc,
                          uint32_t length,
                          const plp_dwt_wavelet_q16 wavelet,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          int16_t *__restrict__ pDstA,
                          int16_t *__restrict__ pDstD);
 
@@ -8881,6 +8890,7 @@ void plp_dwt_q16p_xpulpv2(const int16_t *__restrict__ pSrc,
    @param[in]   pSrc     points to the input buffer (q15)
    @param[in]   length   length of input buffer
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8889,6 +8899,7 @@ void plp_dwt_q16p_xpulpv2(const int16_t *__restrict__ pSrc,
 void plp_dwt_haar_q16p_xpulpv2(const int16_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          int16_t *__restrict__ pDstA,
                          int16_t *__restrict__ pDstD);
 
@@ -8899,6 +8910,8 @@ void plp_dwt_haar_q16p_xpulpv2(const int16_t *__restrict__ pSrc,
    @param[in]   wavelet  wavelet structure for calculating DWT
    @param[in]   mode     boundary extension mode
 
+   @param[in]   nPE      Number of cores to use
+
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
    @return      none
@@ -8907,6 +8920,7 @@ void plp_dwt_q32p_xpulpv2(const int32_t *__restrict__ pSrc,
                          uint32_t length,
                          const plp_dwt_wavelet_q32 wavelet,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          int32_t *__restrict__ pDstA,
                          int32_t *__restrict__ pDstD);
 
@@ -8915,6 +8929,7 @@ void plp_dwt_q32p_xpulpv2(const int32_t *__restrict__ pSrc,
    @param[in]   pSrc     points to the input buffer (q31)
    @param[in]   length   length of input buffer
    @param[in]   mode     boundary extension mode
+   @param[in]   nPE      Number of cores to use
 
    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
@@ -8923,6 +8938,7 @@ void plp_dwt_q32p_xpulpv2(const int32_t *__restrict__ pSrc,
 void plp_dwt_haar_q32p_xpulpv2(const int32_t *__restrict__ pSrc,
                          uint32_t length,
                          plp_dwt_extension_mode mode,
+                         uint32_t nPE,
                          int32_t *__restrict__ pDstA,
                          int32_t *__restrict__ pDstD);
 
