@@ -96,6 +96,10 @@ void plp_dwt_q32_parallel(const int32_t *__restrict__ pSrc,
       case PLP_DWT_WAVELET_DB1:
          hal_cl_team_fork(nPE, plp_dwt_haar_q32p_xpulpv2, (void *)&args);
          break;
+      case PLP_DWT_WAVELET_HAAR_U:
+         hal_cl_team_fork(nPE, plp_dwt_haar_u_q32p_xpulpv2, (void *)&args);
+
+         break;
       default:
          dec_hi_l1 = hal_cl_l1_malloc(sizeof(int32_t) * (wavelet.length));
          dec_lo_l1 = hal_cl_l1_malloc(sizeof(int32_t) * (wavelet.length));

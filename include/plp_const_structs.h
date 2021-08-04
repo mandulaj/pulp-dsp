@@ -55,6 +55,11 @@ extern const plp_fft_instance_f32 plp_rfft_sR_f32_len2048;
 
 extern const plp_triangular_filter_f32 plp_triangular_filter_f32_32;
 
+extern const plp_dwt_wavelet_f32 PLP_DWT_HAAR_U_f32;
+extern const plp_dwt_wavelet_q32 PLP_DWT_HAAR_U_q32;
+extern const plp_dwt_wavelet_q16 PLP_DWT_HAAR_U_q16;
+extern const plp_dwt_wavelet_q8 PLP_DWT_HAAR_U_q8;
+
 
 extern const plp_dwt_wavelet_f32 PLP_DWT_COIF1_f32;
 extern const plp_dwt_wavelet_f32 PLP_DWT_COIF2_f32;
