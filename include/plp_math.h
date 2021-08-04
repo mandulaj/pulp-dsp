@@ -1371,6 +1371,7 @@ typedef struct {
 typedef enum {
     PLP_DWT_WAVELET_OTHER,
     PLP_DWT_WAVELET_HAAR,
+    PLP_DWT_WAVELET_HAAR_U,
 
     PLP_DWT_WAVELET_DB1,
     PLP_DWT_WAVELET_DB2,
@@ -8723,6 +8724,42 @@ void plp_dwt_haar_q32s_xpulpv2(const int32_t *__restrict__ pSrc,
                          int32_t *__restrict__ pDstD);
 
 
+/**
+   @brief  32bit Fixed-point DWT  kernel optimized for Unnormalized Haar Wavelet on real input data for XPULPV2 extension.
+   @param[in]   pSrc     points to the input buffer (real data)
+   @param[in]   length   length of input buffer
+   @param[in]   mode     boundary extension mode
+
+   @param[out]  pDstA    points to ouput buffer with Approximate coefficients
+   @param[out]  pDstD    points to ouput buffer with Detailed coefficients
+   @return      none
+*/
+void plp_dwt_haar_u_q32s_xpulpv2(const int32_t *__restrict__ pSrc,
+                         uint32_t length,
+                         plp_dwt_extension_mode mode,
+                         int32_t *__restrict__ pDstA,
+                         int32_t *__restrict__ pDstD);
+
+
+
+/**
+   @brief  32bit Fixed-point DWT  kernel optimized for Unnormalized Haar Wavelet on real input data.
+   @param[in]   pSrc     points to the input buffer (real data)
+   @param[in]   length   length of input buffer
+   @param[in]   mode     boundary extension mode
+
+   @param[out]  pDstA    points to ouput buffer with Approximate coefficients
+   @param[out]  pDstD    points to ouput buffer with Detailed coefficients
+   @return      none
+*/
+void plp_dwt_haar_u_q32s_rv32im(const int32_t *__restrict__ pSrc,
+                         uint32_t length,
+                         plp_dwt_extension_mode mode,
+                         int32_t *__restrict__ pDstA,
+                         int32_t *__restrict__ pDstD);
+
+
+
 
 /**
    @brief  16bit Fixed-point DWT for XPULPV2 extension.
@@ -8940,6 +8977,13 @@ void plp_dwt_q32p_xpulpv2(void *arg);
 */
 void plp_dwt_haar_q32p_xpulpv2(void *args);
 
+
+/**
+   @brief  Q31 Fixed-point DWT kernel optimized for Un-normalized Haar Wavelet for XPULPV2 extension.
+   @param[in]   args     points to the plp_dwt_instance_q32
+   @return      none
+*/
+void plp_dwt_haar_u_q32p_xpulpv2(void *args);
 
 
 

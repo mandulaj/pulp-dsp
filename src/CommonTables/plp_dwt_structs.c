@@ -37,6 +37,52 @@ const plp_dwt_wavelet_f32 PLP_DWT_HAAR_f32 = {
     }
 };
 
+const plp_dwt_wavelet_f32 PLP_DWT_HAAR_U_f32 = {
+    .length = 2,
+    .type = PLP_DWT_WAVELET_HAAR_U,
+    .dec_lo = (float32_t []){
+    1.000000000000000000f,   1.000000000000000000f
+    },
+    .dec_hi = (float32_t []){
+   -1.000000000000000000f,   1.000000000000000000f
+    }
+};
+
+
+
+const plp_dwt_wavelet_q32 PLP_DWT_HAAR_U_q32 = {
+    .length = 2,
+    .type = PLP_DWT_WAVELET_HAAR_U,
+    .dec_lo = (int32_t []){
+    0x00000000,    0x00000000
+    },
+    .dec_hi = (int32_t []){
+    0x00000000,    0x00000000
+    }
+};
+
+const plp_dwt_wavelet_q16 PLP_DWT_HAAR_U_q16 = {
+    .length = 2,
+    .type = PLP_DWT_WAVELET_HAAR_U,
+    .dec_lo = (int16_t []){
+    0x0000,    0x0000
+    },
+    .dec_hi = (int16_t []){
+    0x0000,    0x0000
+    }
+};
+
+const plp_dwt_wavelet_q8 PLP_DWT_HAAR_U_q8 = {
+    .length = 2,
+    .type = PLP_DWT_WAVELET_HAAR_U,
+    .dec_lo = (int8_t []){
+    0x00,    0x00
+    },
+    .dec_hi = (int8_t []){
+    0x00,    0x00
+    }
+};
+
 
 const plp_dwt_wavelet_f32 PLP_DWT_COIF1_f32 = {
     .length = 6,
