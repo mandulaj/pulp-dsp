@@ -1501,7 +1501,7 @@ typedef enum {
 typedef struct {
     const float32_t *pSrc;             //  points to the input buffer
     uint32_t length;                   // length of input buffer
-    const plp_dwt_wavelet_f32 wavelet; // wavelet structure for calculating DWT
+    plp_dwt_wavelet_f32 wavelet; // wavelet structure for calculating DWT
     plp_dwt_extension_mode mode;       // boundary extension mode
     uint32_t nPE;                      // number of processing units
 
@@ -1524,7 +1524,7 @@ typedef struct {
 typedef struct {
     const int32_t *pSrc;  //  points to the input buffer
     uint32_t length;        // length of input buffer
-    const plp_dwt_wavelet_q32 wavelet; // wavelet structure for calculating DWT
+    plp_dwt_wavelet_q32 wavelet; // wavelet structure for calculating DWT
     plp_dwt_extension_mode mode; // boundary extension mode
     uint32_t nPE;           // number of processing units
 
@@ -1548,7 +1548,7 @@ typedef struct {
 typedef struct {
     const int16_t *pSrc;  //  points to the input buffer
     uint32_t length;        // length of input buffer
-    const plp_dwt_wavelet_q16 wavelet; // wavelet structure for calculating DWT
+    plp_dwt_wavelet_q16 wavelet; // wavelet structure for calculating DWT
     plp_dwt_extension_mode mode; // boundary extension mode
     uint32_t nPE;           // number of processing units
 
@@ -1571,7 +1571,7 @@ typedef struct {
 typedef struct {
     const int8_t *pSrc;  //  points to the input buffer
     uint32_t length;        // length of input buffer
-    const plp_dwt_wavelet_q8 wavelet; // wavelet structure for calculating DWT
+    plp_dwt_wavelet_q8 wavelet; // wavelet structure for calculating DWT
     plp_dwt_extension_mode mode; // boundary extension mode
     uint32_t nPE;           // number of processing units
 
