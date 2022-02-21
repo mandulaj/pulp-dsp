@@ -427,14 +427,14 @@ void NAME(const int32_t *__restrict__ pSrc,                                     
 MAKE_HAAR(plp_dwt_haar_q32s_rv32im, HAAR_COEF, MAC_SHIFT)
 
 
-// /**
-//    @brief  Q31 Fixed-point DWT kernel optimized for Un-normalized Haar Wavelet
-//    @param[in]   pSrc     points to the input buffer (q31)
-//    @param[in]   length   length of input buffer
-//    @param[in]   mode     boundary extension mode
+/**
+   @brief  Q31 Fixed-point DWT kernel optimized for Un-normalized Haar Wavelet
+   @param[in]   pSrc     points to the input buffer (q31)
+   @param[in]   length   length of input buffer
+   @param[in]   mode     boundary extension mode
 
-//    @param[out]  pDstA    points to ouput buffer with Approximate coefficients
-//    @param[out]  pDstD    points to ouput buffer with Detailed coefficients
-//    @return      none
-// */
-// MAKE_HAAR(plp_dwt_haar_u_q32s_rv32im, 1U, 0U)
+   @param[out]  pDstA    points to ouput buffer with Approximate coefficients
+   @param[out]  pDstD    points to ouput buffer with Detailed coefficients
+   @return      none
+*/
+MAKE_HAAR(plp_dwt_haar_u_q32s_rv32im, 1U, 0U)

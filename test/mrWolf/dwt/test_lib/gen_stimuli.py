@@ -49,7 +49,18 @@ def compute_result(result_parameter, inputs, env, fix_point):
         'PLP_DWT_DB2': 'db2',
         'PLP_DWT_DB4': 'db4',
         'PLP_DWT_COIF17': 'coif17',
-	    'PLP_DWT_SYM20': 'sym20'
+	    'PLP_DWT_SYM20': 'sym20',
+        'PLP_DWT_HAAR_U': pywt.Wavelet('haar_u', filter_bank=[[1,1],[-1,1],[1,1],[1,-1]])
+    }
+
+    wavelets_shift = {
+        'PLP_DWT_HAAR': True,
+        'PLP_DWT_DB1': True,
+        'PLP_DWT_DB2': True,
+        'PLP_DWT_DB4': True,
+        'PLP_DWT_COIF17': True,
+	    'PLP_DWT_SYM20': True,
+        'PLP_DWT_HAAR_U': False
     }
 
     modes = {
@@ -73,24 +84,38 @@ def compute_result(result_parameter, inputs, env, fix_point):
             ww = make_fixed_point_wavelet(wavelets[wavelet], 'q8')
 
             cA, cD = pywt.dwt(src, ww, modes[mode])
-            cA = right_shift(cA, 'q8')
-            cD = right_shift(cD, 'q8')
+            if wavelets_shift[wavelet]:
+                cA = right_shift(cA, 'q8')
+                cD = right_shift(cD, 'q8')
+            else:
+                cA = cA.astype(np.int8)
+                cD = cD.astype(np.int8)
 
         elif result_parameter.ctype == 'int16_t':
             # Create 16bit quantized version of the wavelet
             ww = make_fixed_point_wavelet(wavelets[wavelet], 'q16')
 
             cA, cD = pywt.dwt(src, ww, modes[mode])
-            cA = right_shift(cA, 'q16')
-            cD = right_shift(cD, 'q16')
+            if wavelets_shift[wavelet]:
+
+                cA = right_shift(cA, 'q16')
+                cD = right_shift(cD, 'q16')
+            else:
+                cA = cA.astype(np.int16)
+                cD = cD.astype(np.int16)
 
         elif result_parameter.ctype == 'int32_t':
             # Create 32bit quantized version of the wavelet
             ww = make_fixed_point_wavelet(wavelets[wavelet], 'q32')
 
             cA, cD = pywt.dwt(src, ww, modes[mode])
-            cA = right_shift(cA, 'q32')
-            cD = right_shift(cD, 'q32')
+            if wavelets_shift[wavelet]:
+
+                cA = right_shift(cA, 'q32')
+                cD = right_shift(cD, 'q32')
+            else:
+                cA = cA.astype(np.int32)
+                cD = cD.astype(np.int32)
 
     elif result_parameter.ctype == 'float':
         src = inputs['pSrc'].value.astype(np.float32)
@@ -122,13 +147,18 @@ def right_shift(arr, dtype):
 
 
 def make_fixed_point_wavelet(wavelet, dtype):
+    if isinstance(wavelet, str):
+        ww = pywt.Wavelet(wavelet)
+    else:
+        return wavelet
+
     """Make fixed point wavelet by quantizing existing wavelength coefficients"""
     if dtype == "q32":
-        return pywt.Wavelet(filter_bank=convert_dtype(np.array(pywt.Wavelet(wavelet).filter_bank), 'q32'))
+        return pywt.Wavelet(filter_bank=convert_dtype(np.array(ww.filter_bank), 'q32'))
     elif dtype == "q16":
-        return pywt.Wavelet(filter_bank=convert_dtype(np.array(pywt.Wavelet(wavelet).filter_bank), 'q16'))
+        return pywt.Wavelet(filter_bank=convert_dtype(np.array(ww.filter_bank), 'q16'))
     elif dtype == "q8":
-        return pywt.Wavelet(filter_bank=convert_dtype(np.array(pywt.Wavelet(wavelet).filter_bank), 'q8'))
+        return pywt.Wavelet(filter_bank=convert_dtype(np.array(ww.filter_bank), 'q8'))
 
 
 def convert_dtype(arr, dtype):

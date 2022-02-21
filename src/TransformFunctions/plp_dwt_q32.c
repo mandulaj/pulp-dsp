@@ -85,6 +85,9 @@ void plp_dwt_q32(const int32_t *__restrict__ pSrc,
       case PLP_DWT_WAVELET_DB1:
          plp_dwt_haar_q32s_rv32im(pSrc, length, mode, pDstA, pDstD);
          break;
+      case PLP_DWT_WAVELET_HAAR_U:
+         plp_dwt_haar_u_q32s_rv32im(pSrc, length, mode, pDstA, pDstD);
+         break;
       default:
 
          // dec_hi_l1 = hal_fc_l1_malloc(sizeof(int32_t) * (wavelet.length));
@@ -111,6 +114,9 @@ void plp_dwt_q32(const int32_t *__restrict__ pSrc,
       case PLP_DWT_WAVELET_HAAR:
       case PLP_DWT_WAVELET_DB1:
          plp_dwt_haar_q32s_xpulpv2(pSrc, length, mode, pDstA, pDstD);
+         break;
+      case PLP_DWT_WAVELET_HAAR_U:
+         plp_dwt_haar_u_q32s_xpulpv2(pSrc, length, mode, pDstA, pDstD);
          break;
       default:
 
