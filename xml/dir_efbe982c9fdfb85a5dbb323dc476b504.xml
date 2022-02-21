@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_efbe982c9fdfb85a5dbb323dc476b504" kind="dir">
+    <compoundname>/github/workspace/src/TransformFunctions/kernels</compoundname>
+    <innerfile refid="plp__bitreversal__rv32im_8c">plp_bitreversal_rv32im.c</innerfile>
+    <innerfile refid="plp__bitreversal__xpulpv2_8c">plp_bitreversal_xpulpv2.c</innerfile>
+    <innerfile refid="plp__cfft__f32__xpulpv2_8c">plp_cfft_f32_xpulpv2.c</innerfile>
+    <innerfile refid="plp__cfft__q16p__xpulpv2_8c">plp_cfft_q16p_xpulpv2.c</innerfile>
+    <innerfile refid="plp__cfft__q16s__rv32im_8c">plp_cfft_q16s_rv32im.c</innerfile>
+    <innerfile refid="plp__cfft__q16s__xpulpv2_8c">plp_cfft_q16s_xpulpv2.c</innerfile>
+    <innerfile refid="plp__cfft__q32s__rv32im_8c">plp_cfft_q32s_rv32im.c</innerfile>
+    <innerfile refid="plp__cfft__q32s__xpulpv2_8c">plp_cfft_q32s_xpulpv2.c</innerfile>
+    <innerfile refid="plp__rfft__f32__xpulpv2_8c">plp_rfft_f32_xpulpv2.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/src/TransformFunctions/kernels/"/>
+  </compounddef>
+</doxygen>

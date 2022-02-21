@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="group__complexFFTKernels" kind="group">
+    <compoundname>complexFFTKernels</compoundname>
+    <title>FFT kernels on complex input values</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__complexFFTKernels_1ga92796443038edf5e4fea57b785f5e2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plp_cfft_f32_xpulpv2</definition>
+        <argsstring>(const plp_fft_instance_f32 *S, const float32_t *pSrc, float32_t *pDst)</argsstring>
+        <name>plp_cfft_f32_xpulpv2</name>
+        <param>
+          <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>const float32_t *</type>
+          <declname>pSrc</declname>
+        </param>
+        <param>
+          <type>float32_t *</type>
+          <declname>pDst</declname>
+        </param>
+        <briefdescription>
+<para>Floating-point FFT on complex input data for XPULPV2 extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">S</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to an instance of the floating-point FFT structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pSrc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to the input buffer (complex data) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pDst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to the output buffer (complex data) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="113" column="6" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="113" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1ga505aa62b29fddcc84b30520340035083" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void plp_cfft_radix2_f32_xpulpv2</definition>
+        <argsstring>(const plp_fft_instance_f32 *S, const float32_t *pSrc, float32_t *pDst)</argsstring>
+        <name>plp_cfft_radix2_f32_xpulpv2</name>
+        <param>
+          <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>const float32_t *</type>
+          <declname>pSrc</declname>
+        </param>
+        <param>
+          <type>float32_t *</type>
+          <declname>pDst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="134" column="13" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="134" bodyend="229" declfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" declline="70" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1gafc467eb9e8cd732ada8d088ac9c9ab3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void plp_cfft_radix4_f32_xpulpv2</definition>
+        <argsstring>(const plp_fft_instance_f32 *S, const float32_t *pSrc, float32_t *pDst)</argsstring>
+        <name>plp_cfft_radix4_f32_xpulpv2</name>
+        <param>
+          <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>const float32_t *</type>
+          <declname>pSrc</declname>
+        </param>
+        <param>
+          <type>float32_t *</type>
+          <declname>pDst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="231" column="13" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="231" bodyend="326" declfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" declline="74" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1ga480b094757b1db19610e0f4004617422" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void plp_cfft_radix8_f32_xpulpv2</definition>
+        <argsstring>(const plp_fft_instance_f32 *S, const float32_t *pSrc, float32_t *pDst)</argsstring>
+        <name>plp_cfft_radix8_f32_xpulpv2</name>
+        <param>
+          <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type>const float32_t *</type>
+          <declname>pSrc</declname>
+        </param>
+        <param>
+          <type>float32_t *</type>
+          <declname>pDst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="328" column="13" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="328" bodyend="423" declfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" declline="78" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1gaba8d9599aef2fecf81cff7ea798cf627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plp_cfft_f32_xpulpv2_parallel</definition>
+        <argsstring>(plp_fft_instance_f32_parallel *arg)</argsstring>
+        <name>plp_cfft_f32_xpulpv2_parallel</name>
+        <param>
+          <type><ref refid="structplp__fft__instance__f32__parallel" kindref="compound">plp_fft_instance_f32_parallel</ref> *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Floating-point FFT on complex input data for XPULPV2 extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Floating-point FFT on complex input data for XPULPV2 extension (parallel version).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to an instance of the floating-point FFT structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="431" column="6" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="431" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1ga6decf5a6f35f4b9386c0ee2782942bc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plp_cfft_radix2_f32_xpulpv2_parallel</definition>
+        <argsstring>(plp_fft_instance_f32_parallel *arg)</argsstring>
+        <name>plp_cfft_radix2_f32_xpulpv2_parallel</name>
+        <param>
+          <type><ref refid="structplp__fft__instance__f32__parallel" kindref="compound">plp_fft_instance_f32_parallel</ref> *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="450" column="6" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="450" bodyend="575" declfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" declline="82" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1gaba5721fce6391970a2064e33df797405" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plp_cfft_radix4_f32_xpulpv2_parallel</definition>
+        <argsstring>(plp_fft_instance_f32_parallel *arg)</argsstring>
+        <name>plp_cfft_radix4_f32_xpulpv2_parallel</name>
+        <param>
+          <type><ref refid="structplp__fft__instance__f32__parallel" kindref="compound">plp_fft_instance_f32_parallel</ref> *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="577" column="6" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="577" bodyend="709" declfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__complexFFTKernels_1ga0acde21f8b4a4e04bd7a8fcceadd8da6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void plp_cfft_radix8_f32_xpulpv2_parallel</definition>
+        <argsstring>(plp_fft_instance_f32_parallel *arg)</argsstring>
+        <name>plp_cfft_radix8_f32_xpulpv2_parallel</name>
+        <param>
+          <type><ref refid="structplp__fft__instance__f32__parallel" kindref="compound">plp_fft_instance_f32_parallel</ref> *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" line="711" column="6" bodyfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" bodystart="711" bodyend="834" declfile="/github/workspace/src/TransformFunctions/kernels/plp_cfft_f32_xpulpv2.c" declline="84" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>These kernels calculate the FFT transform on complex input data. If the dimension of the transform is FFTLen, both the input and the output buffer must contain at least (2*FFTLen) float32 values, corresponding to FFTLen complex values in the form (real part, complex part). Input and output can refer to the same memory location (in-place computation). The best algorithm is executed based on the val FFTLen. Supported algorithms: radix-2, radix-4, radix-8 </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

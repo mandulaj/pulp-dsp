@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="plp__const__structs_8h" kind="file" language="C++">
+    <compoundname>plp_const_structs.h</compoundname>
+    <includes refid="plp__common__tables_8h" local="yes">plp_common_tables.h</includes>
+    <includes refid="plp__math_8h" local="yes">plp_math.h</includes>
+    <includedby refid="plp__const__structs_8c" local="yes">/github/workspace/src/CommonTables/plp_const_structs.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>plp_common_tables.h</label>
+        <link refid="plp__common__tables_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/github/workspace/include/plp_const_structs.h</label>
+        <link refid="plp__const__structs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>plp_math.h</label>
+        <link refid="plp__math_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rtos_hal.h</label>
+        <link refid="rtos__hal_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>rt/rt_api.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/github/workspace/include/plp_const_structs.h</label>
+        <link refid="plp__const__structs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/github/workspace/src/CommonTables/plp_const_structs.c</label>
+        <link refid="plp__const__structs_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="plp__const__structs_8h_1a4bb95839661546585db8893acc07e7fe" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len16</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="31" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="28" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="31" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a299f5ec9dd955a346e5ef14914600d65" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len32</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="32" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="32" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="32" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1ac69784cec8ef39abbd0c637841ef3868" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len64</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="33" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="36" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="33" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1afcfeb05a3f98679c9893bc064680279f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len128</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="34" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="40" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="34" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a2deefcecc15a2c5b1a7f7cb9288665df" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len256</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="35" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="44" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="35" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1abe1156ff424045eeb3d2c49a0d84a211" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len512</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="36" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="48" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="36" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a5b769c0fd1c5762049d9438974c32c4d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len1024</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="37" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="52" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="37" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a6258508dbb1376580a28f83570dc4223" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len2048</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="38" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="56" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="38" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a1728b76918279a27e17dc0613f322f45" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref></type>
+        <definition>const plp_cfft_instance_q16 plp_cfft_sR_q16_len4096</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q16_len4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="39" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="60" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="39" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a3ecb37b4863f67bde7a62e8cd96bae01" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len16</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="41" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="65" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="41" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a28425f2b9079a13badb8e1d8d231a36f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len32</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="42" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="69" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="42" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a53a1310335ee90da6768cc9fe525b832" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len64</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="43" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="73" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="43" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a3dfcfd413347cd542a5686353c691068" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len128</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="44" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="77" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="44" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a8d6b5002a6ea1c2d9ec09bdcc5117fe0" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len256</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="45" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="81" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="45" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a8af5b6b930a463af2302f62745200dd2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len512</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="46" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="85" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="46" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a46d1a2ed2dd7674dc8a86dec406fec6d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len1024</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="47" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="89" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="47" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a64c0b72d2d58fcc97b5a158dd5ed156c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len2048</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="48" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="93" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="48" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1af15121811c81a571688b35da03b449e4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref></type>
+        <definition>const plp_cfft_instance_q32 plp_cfft_sR_q32_len4096</definition>
+        <argsstring></argsstring>
+        <name>plp_cfft_sR_q32_len4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="49" column="36" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="97" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="49" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a0619af72294054f3e39b2c9ebdd96024" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref></type>
+        <definition>const plp_fft_instance_f32 plp_rfft_sR_f32_len32</definition>
+        <argsstring></argsstring>
+        <name>plp_rfft_sR_f32_len32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="51" column="35" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="102" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="51" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a2a207aa88da0b7b5e2987442d1cc5495" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref></type>
+        <definition>const plp_fft_instance_f32 plp_rfft_sR_f32_len128</definition>
+        <argsstring></argsstring>
+        <name>plp_rfft_sR_f32_len128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="52" column="35" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="105" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="52" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a5f7c0f1ef28210e23eac938b71eb574c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref></type>
+        <definition>const plp_fft_instance_f32 plp_rfft_sR_f32_len512</definition>
+        <argsstring></argsstring>
+        <name>plp_rfft_sR_f32_len512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="53" column="35" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="108" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="53" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a2cadd3d85a6273d694760006af22bc01" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref></type>
+        <definition>const plp_fft_instance_f32 plp_rfft_sR_f32_len2048</definition>
+        <argsstring></argsstring>
+        <name>plp_rfft_sR_f32_len2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="54" column="35" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="111" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="54" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="plp__const__structs_8h_1a502882705fd57cdafa5e3251a0284899" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structplp__triangular__filter__f32" kindref="compound">plp_triangular_filter_f32</ref></type>
+        <definition>const plp_triangular_filter_f32 plp_triangular_filter_f32_32</definition>
+        <argsstring></argsstring>
+        <name>plp_triangular_filter_f32_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/plp_const_structs.h" line="56" column="40" bodyfile="/github/workspace/src/CommonTables/plp_const_structs.c" bodystart="114" bodyend="-1" declfile="/github/workspace/include/plp_const_structs.h" declline="56" declcolumn="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File containing constant structs, initialized for user convenience. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>==========================================================================</para>
+<para><simplesect kind="version"><para>V0 </para>
+</simplesect>
+</para>
+<sect1 id="plp__const__structs_8h_1autotoc_md1">
+<title>@date     28. June 2020</title>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020<sp/>ETH<sp/>Zurich<sp/>and<sp/>University<sp/>of<sp/>Bologna.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>License);<sp/>you<sp/>may</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>AS<sp/>IS<sp/>BASIS,<sp/>WITHOUT</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__PLP_CONST_STRUCTS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PLP_CONST_STRUCTS_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="plp__common__tables_8h" kindref="compound">plp_common_tables.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="plp__math_8h" kindref="compound">plp_math.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len16;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len32;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len64;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len128;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len256;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len512;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len1024;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len2048;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q16" kindref="compound">plp_cfft_instance_q16</ref><sp/>plp_cfft_sR_q16_len4096;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len16;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len32;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len64;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len128;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len256;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len512;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len1024;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len2048;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__cfft__instance__q32" kindref="compound">plp_cfft_instance_q32</ref><sp/>plp_cfft_sR_q32_len4096;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref><sp/>plp_rfft_sR_f32_len32;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref><sp/>plp_rfft_sR_f32_len128;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref><sp/>plp_rfft_sR_f32_len512;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__fft__instance__f32" kindref="compound">plp_fft_instance_f32</ref><sp/>plp_rfft_sR_f32_len2048;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structplp__triangular__filter__f32" kindref="compound">plp_triangular_filter_f32</ref><sp/>plp_triangular_filter_f32_32;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PLP_CONST_STRUCTS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/plp_const_structs.h"/>
+  </compounddef>
+</doxygen>
